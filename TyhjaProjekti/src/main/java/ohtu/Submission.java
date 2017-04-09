@@ -6,7 +6,7 @@ public class Submission {
     private boolean a1, a2, a3, a4, a5, a6, a7, a8, a9, a10,
             a11, a12, a13, a14, a15, a16, a17, a18, a19, a20,
             a21;
-    private int week, hours;
+    private int week, hours, maxPoints;
     private String completedTasksString;
     
     public String getStudent_number() {
@@ -17,8 +17,16 @@ public class Submission {
         this.student_number = student_number;
     }
 
+    public int getWeek() {
+        return week;
+    }
+    
     public int getHours() {
         return hours;
+    }
+
+    public void setMaxPoints(int maxPoints) {
+        this.maxPoints = maxPoints;
     }
     
     public int getCompletedTasksSum() {
@@ -41,7 +49,8 @@ public class Submission {
     public String toString() {
         return "viikko " + week
                 + ": tehtyjä tehtäviä yhteensä: " + getCompletedTasksSum()
-                + ", aikaa kului " + hours 
+                + " (maksimi " + maxPoints
+                + "), aikaa kului " + hours 
                 + " tuntia, tehdyt tehtävät:"
                 + completedTasksString;
     }
