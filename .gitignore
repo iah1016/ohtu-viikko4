@@ -1,3 +1,7 @@
 /TyhjaProjekti/build/
 /TyhjaProjekti/.gradle/
 /TyhjaProjekti/.nb-gradle/
+
+/WebLogin/build/
+/WebLogin/.gradle/
+/WebLogin/.nb-gradle/
